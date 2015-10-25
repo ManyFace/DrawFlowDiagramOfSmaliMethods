@@ -36,9 +36,9 @@ Example:
 ![](https://github.com/ManyFace/DrawFlowDiagramOfSmaliMethods/blob/master/res/check(Ljava.lang.String%3B)Z.png)
 <br>
 Note：
-* The number in the diagrams is the line number of this instruction.
+1. The number in the diagrams is the line number of this instruction.
 Figure legends:
-* Yellow rectangle indicates return instruction.
+1. Yellow rectangle indicates return instruction.
 * Orange edge indicates unconditional jump
 * Red edge indicates conditional jump if condition is false. That means it will execute all instructions between from node and end node
 * Green edge indicates conditional jump if condition is true
