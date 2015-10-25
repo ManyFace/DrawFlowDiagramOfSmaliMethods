@@ -139,7 +139,7 @@ class DrawFlowDiagram:
     def __init__(self, smaliFilePath, pictureFormat, methodsToDraw, outputDir):
         self.smaliFilePath = smaliFilePath
         self.pictureFormat = pictureFormat
-        # if methodsToDraw is empty, draw all methods' flow graphs, otherwise, only draw flow graphs of methods that are in methodsToDraw
+        # if methodsToDraw is empty, draw all methods' flow diagrams, otherwise, only draw flow diagrams of methods that are in methodsToDraw
         self.methodsToDraw = methodsToDraw
         self.outputDir = outputDir
         self.classInSmali = ClassInSmali()
@@ -184,7 +184,7 @@ class DrawFlowDiagram:
             try:
                 self.__drawMethodFlowDiagram(method)
             except Exception, ex:
-                print "\n\tDraw method flow graph error!\n\terror message:%s\n\tmethod name:%s\n" % (str(ex), method.methodName)
+                print "\n\tDraw method flow diagram error!\n\terror message:%s\n\tmethod name:%s\n" % (str(ex), method.methodName)
 
     def __drawMethodFlowDiagram(self, method):
         methodName = method.methodName
@@ -234,7 +234,7 @@ class DrawFlowDiagram:
         os.remove(tempDotFileName)
         if ret[-1]:
             raise Exception(ret[-1])
-        print "draw method(%s) flow graph succeed!" % methodName
+        print "draw method(%s) flow diagram succeed!" % methodName
 
     @staticmethod
     def __getDotStrForEdge(fromLineNum, toLineNum, edgeColor):
@@ -254,12 +254,12 @@ class DrawFlowDiagram:
 
 
 def main():
-    argumentParser = argparse.ArgumentParser(description="Draw methods flow graphs!")
+    argumentParser = argparse.ArgumentParser(description="Draw methods flow diagrams!")
     argumentParser.add_argument("-s", dest="smali_file_path", required=True, help="The smali file path.")
     argumentParser.add_argument("-f", dest="picture_format", default="png", choices=["png", "jpg", "svg"], help="the picture formate. Defult is png.")
     argumentParser.add_argument("-m", dest="methods_to_draw",
-                                help="The method name or method signature. Different methods split with #, such as func#func1(I)Z#func(Ljava/lang/String;)V. If doesn't specify this parameter,it will draw all methods flow graphs.")
-    argumentParser.add_argument("-o", dest="output_dir", default=os.getcwd(), help="The output flow graphs' directory. Defult is current directory.")
+                                help="The method name or method signature. Different methods split with #, such as func#func1\(I\)Z. If doesn't specify this parameter,it will draw all methods flow diagrams.")
+    argumentParser.add_argument("-o", dest="output_dir", default=os.getcwd(), help="The output flow diagrams' directory. Defult is current directory.")
     args = argumentParser.parse_args()
 
     smaliFilePath = args.smali_file_path
