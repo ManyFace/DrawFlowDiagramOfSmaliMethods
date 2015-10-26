@@ -36,7 +36,7 @@ Example:
 ![](https://github.com/ManyFace/DrawFlowDiagramOfSmaliMethods/blob/master/res/check(Ljava.lang.String%3B)Z.png)
 <br>
 Note:<br>
-* The number in the diagrams increasing from top to bottom is the line number of this instruction.<br>
+* The numbers in the diagram increasing from top to bottom are the line numbers of instructions.<br>
 Figure legends:<br>
 1.Yellow rectangle indicates return instruction.<br>
 2.Orange edge indicates unconditional jump<br>
