@@ -29,18 +29,18 @@ Example:
 * python python drawFlowDiagramOfSmaliMethods.py -s Check.smali -f png -m check -o /home/cpf/output
 
 ##Output Flow Diagrams
-1. example 1<br>
+1.example 1<br>
 ![](https://github.com/ManyFace/DrawFlowDiagramOfSmaliMethods/blob/master/res/access%24_T11306(Ljava.lang.Object%3BLjava.lang.String%3B)Ljava.lang.String%3B.png)
 <br>
-2. example 2<br>
+2.example 2<br>
 ![](https://github.com/ManyFace/DrawFlowDiagramOfSmaliMethods/blob/master/res/check(Ljava.lang.String%3B)Z.png)
 <br>
-Note：
-1. The number in the diagrams is the line number of this instruction.
-Figure legends:
-1. Yellow rectangle indicates return instruction.
-* Orange edge indicates unconditional jump
-* Red edge indicates conditional jump if condition is false. That means it will execute all instructions between from node and end node
-* Green edge indicates conditional jump if condition is true
+Note:<br>
+* The number in the diagrams increasing from top to bottom is the line number of this instruction.<br>
+Figure legends:<br>
+1.Yellow rectangle indicates return instruction.<br>
+2.Orange edge indicates unconditional jump<br>
+3.Red edge indicates conditional jump if condition is false. That means it will execute all instructions between from node and end node<br>
+4.Green edge indicates conditional jump if condition is true<br>
 
 
