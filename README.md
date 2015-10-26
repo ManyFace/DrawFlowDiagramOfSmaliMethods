@@ -25,8 +25,8 @@ The flow diagram is based on unconditional jump(goto) and conditional jump(if) i
 4. -o output_dir specifies the directory of output flow diagrams. Defult is current directory.
 
 Example:
-* python python drawFlowDiagramOfSmaliMethods.py -s Check.smali   //generate flow diagrams of all methods in Check.smali
-* python python drawFlowDiagramOfSmaliMethods.py -s Check.smali -f png -m check -o /home/cpf/output
+* python drawFlowDiagramOfSmaliMethods.py -s Check.smali   //generate flow diagrams of all methods in Check.smali
+* python drawFlowDiagramOfSmaliMethods.py -s Check.smali -f png -m check -o /home/cpf/output
 
 ##Output Flow Diagrams
 1.example 1<br>
